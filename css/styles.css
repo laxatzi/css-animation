@@ -110,6 +110,8 @@ button {
    -webkit-transition-duration: .4s;
    transition-timing-function: ease-out;
    -webkit-transition-function: ease-out;
+   transition-delay: 1s;
+   -webkit-transition-delay: 1s;
  }
  
  /* General styling */
