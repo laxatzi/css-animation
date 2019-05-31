@@ -1,9 +1,9 @@
 
 :root {
    --colorMain: #222;
+   --colorBgMain:  rgb(25, 133, 25);
   /* --colorSecond: #666;
-  --colorBgMain:  #fff;
-  --colorBgSecond: #F0F0F0;
+     --colorBgSecond: #F0F0F0;
   --colorDistinct: #F47E00; */
 }
 
@@ -127,7 +127,7 @@ button {
  }
  
  button:hover {
-   background: green;
+   background: var(--colorBgMain);
    color: #fff;
    font-size: 34px;
  }
