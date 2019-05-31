@@ -79,8 +79,22 @@ img {
  max-width: 100%;
  height: auto;
 }
-
-
+.container {
+  display: flex;
+  width: 800px;  
+  border: 1px solid yellow;
+  flex-wrap: wrap;
+}
+button {
+  display: flex;
+  justify-content: flex-start;
+  z-index: 20;
+}
+.cube {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
 blockquote {
  position: relative;
  font-weight: bold;
@@ -138,6 +152,18 @@ button {
  }
  
  body {
-   background: var(--colorMain);
+   background: var(--colorMain);    
  }
- 
+ .cube {
+  background: #fff;
+  border-radius: 2px;
+  color: var(--colorMain);
+  font-size: 24px;
+  font: Helvetica, Arial, Sans-serif;
+  height: 6em;
+  width: 6em;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
