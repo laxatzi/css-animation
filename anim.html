@@ -21,19 +21,25 @@ body {
   color: #222;
   font-size: 24px;
   font: Helvetica, Arial, Sans-serif;
-  height: 6em;
-  width: 6em;
+  height: 3em;
+  width: 3em;
   position: absolute;
-  top: calc(50% - 3em);
-  left: calc(50% - 3em);
+  top: calc(50% - 1.5em);
+  left: calc(50% - 1.5em);
+  animation: pendolino 2s ease-in-out infinite;
+}
+@keyframes pendolino {
+   0% {
+      transform:translateX( 5em);
+   }
+   50% {
+      transform: translateX(-5em)
+   }
+   100% {
+      transform: translateX(5em);
+   }
 }
 
-.loader:hover {
-  border-radius: 50%;
-  height: 16em;
-  width: 16em;
-  transform: translate(-50%, -50%);
-}
   </style>
   </head>
   <body>
