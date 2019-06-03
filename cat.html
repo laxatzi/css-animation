@@ -27,14 +27,11 @@
          left:calc(50% - 9em);
          top:calc(50% - 11em);
       }
-         .card:hover .info,
-         .card:focus .info{
-            height: 12em;
+         .card:hover .info{
+            height: 22em;
           }
-         .card:hover .info p,
-         .card:focus .info p {
+         .card:hover .info p {
             opacity: 1;
-            transform: translateY(0);
          }
      .info {
         background-color: rgba(0,0,0,.5);
@@ -43,19 +40,19 @@
         left: 0;
         bottom: 0;
         height: 4em;
-        padding: 1em;
         overflow: hidden;
         margin: 0;
         /* transitions */
-        transition: all .4s linear;
+        transition: all ease-in .5s;
         color: #fff;
      }
      .info p {
         opacity: 0;
-        transform: translateY(2em);
-        transition: all .4s ease-out;
+        padding: 1em;
      }
-   
+     .info h3 {
+        text-align: center;
+     }
 
   </style>
   </head>
