@@ -31,7 +31,11 @@
          .card:focus .info{
             height: 12em;
           }
-
+         .card:hover .info p,
+         .card:focus .info p {
+            opacity: 1;
+            transform: translateY(0);
+         }
      .info {
         background-color: #fff;
         position: absolute;
@@ -42,6 +46,11 @@
         padding: 1em;
         overflow: hidden;
         margin: 0;
+     }
+     .info p {
+        opacity: 0;
+        transform: translateY(2em);
+     }
      }
 
   </style>
