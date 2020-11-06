@@ -1,0 +1,25 @@
+
+body {
+	background-color: #2d2d2d;
+}
+section {
+	margin-top: 50px;
+	background: #2d2d2d;
+}
+
+section a {
+	position: relative;
+	display: inline-block;
+	padding: .7em calc(.7em * 1.2);
+	color: #fff;
+	font-size: 1.25em;
+	cursor: pointer;
+	letter-spacing: .07em;
+	border: 3px solid orangered;
+}
+section a .text {
+	display: block;
+	font-family: 'Courier New', Courier, monospace;
+	transform: translate3d(0, .7em 0);
+	transition: transform .4s cubic-bezier(0.2, 0, 0, 1) .4s;
+}
